@@ -1,0 +1,91 @@
+.activefou {
+  box-shadow: inset 1px 1px 5px #808080;
+  background-color: #e6e6e6;
+}
+
+@keyframes bttn {
+  0% {
+    box-shadow: 0 4px 0 #aa2d29;
+    top: -4px;
+  }
+
+  65% {
+    box-shadow: 0 0 0 transparent;
+    top: 0px;
+  }
+
+  100% {
+    box-shadow: 0 4px 0 #aa2d29;
+    top: -4px;
+  }
+}
+
+// 动画
+.borrow-main {
+  margin: 20px 0 40px 0;
+
+  h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .borrow-sons1 {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: #7777;
+      font-size: 14px;
+      margin-right: 35px;
+    }
+
+    div {
+      border: 1px solid #6666;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 0;
+
+
+
+      button {
+        width: 90px;
+        height: 36px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+
+        &:nth-child(2) {
+          border-left: 1px solid #6666;
+          border-right: 1px solid #6666;
+        }
+
+        &:focus {
+          box-shadow: inset 1px 1px 5px #808080;
+          background-color: #e6e6e6;
+        }
+      }
+    }
+  }
+
+  .borrow-sons2 {
+    .table {
+      font-size: 14px;
+      line-height: 44px;
+
+      .sons1 {
+        display: inline-block;
+        width: 44px;
+        color: #0088CC;
+        border: 1px solid skyblue;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 44px;
+
+        &:hover {
+          color: white;
+          background-color: #0088CC;
+        }
+      }
+    }
+  }
+}

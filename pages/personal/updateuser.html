@@ -1,0 +1,42 @@
+    <!-- 个人资料 -->
+    <div class="Personal-data">
+      <!-- 实名认证 -->
+      <h3 class="brb">个人资料</h3>
+      <fieldset action="post">
+        <p><span>用户名</span><i class="nickname"></i></p>
+        <p><span>真实姓名</span><i>小强</i></p>
+        <p><span>证件号</span><i>512***********6765</i></p>
+        <p>
+          <span>手机号码</span>
+          <input type="text" name="name" id="phone" oninput="this.value=this.value.replace(/[^\d]/g,'')" maxlength=11>
+        </p>
+        <p>
+          <span>邮箱</span>
+          <input type="text" name="Cernum" id="email"><span class="tip"></span>
+        </p>
+        <p>
+          <span>个人学历</span>
+          <select name="edu" id="edu">
+            <option value="J-school">初中</option>
+            <option value="H-school">高中</option>
+            <option value="Uni">本科</option>
+          </select>
+        </p>
+        <p>
+          <span>个人收入</span>
+          <select name="Income" id="Income">
+            <option value="Identity">1000元以下</option>
+            <option value="soldier">1000~6000</option>
+            <option value="driver">6000以上</option>
+          </select>
+        </p>
+
+
+        <p>
+          <span>证件地址</span>
+          <input type="text" name="Address" id="Address">
+        </p>
+        <button id="btN">提交数据</button>
+      </fieldset>
+    </div>
+    <script src="../../dist/js/updateuser.min.js"></script>

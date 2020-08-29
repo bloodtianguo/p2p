@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.borrow_info-main {
+  padding-top: 30px;
+
+  >div {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #6666;
+  }
+
+
+
+  .borrow-sons1 {
+    display: flex;
+    justify-content: space-between;
+
+    .son1 {
+      width: 290px;
+      border: 1px solid #6666;
+      font-size: 14px;
+      margin-right: 50px;
+
+      .portrait {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-top: 10px;
+
+        >img {
+          width: 70%;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+
+      >p {
+        padding: 10px 15px;
+      }
+    }
+
+    .son2 {
+      margin-right: 400px;
+
+      h3 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #9999;
+        font-size: 18px;
+        line-height: 30px;
+
+        span {
+          color: #0099dd;
+        }
+      }
+    }
+  }
+
+  .borr {
+    border: 1px solid #6666;
+
+    div {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        color: #9999;
+        font-size: 18px;
+        line-height: 30px;
+
+        span {
+          color: #0099dd;
+        }
+      }
+    }
+
+
+  }
+
+  .borrow-sons7 {
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    #chargemoney {
+      text-align: center;
+      font-size: 14px;
+      outline: none;
+      width: 92%;
+      height: 94%;
+      border: none;
+      border-left: 1px solid #6666;
+      text-indent: 15px;
+      transition: all 0.5s;
+
+      // &:focus {
+      //   width: 92%;
+      //   box-shadow: 0 0 5px #0099dd, 0 0 5px #b8e4f7;
+      // }
+    }
+
+    #investment {
+      font-size: 18px;
+      outline: none;
+      border: none;
+      color: white;
+      width: 7%;
+      background-color: #0099dd;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      transition: all 0.5s;
+    }
+
+    #chargemoney:focus~#investment {
+      width: 10%;
+      font-size: 24px;
+    }
+  }
+}

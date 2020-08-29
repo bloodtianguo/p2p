@@ -1,0 +1,88 @@
+@keyframes bttn {
+  0% {
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 0 #0e6fa0;
+    top: -4px;
+  }
+
+  65% {
+    font-weight: 400;
+    font-size: 14px;
+    box-shadow: 0 0 0 transparent;
+    top: 0px;
+  }
+
+  100% {
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 0 #0e6fa0;
+    top: -4px;
+  }
+}
+
+.invest-main {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .Inversts {
+    transition: all 0.5s;
+  }
+
+  .Inversts:hover {
+    box-shadow: 0 0 10px #cccc, 0 0 10px #cccc, 0 0 10px #cccc;
+    border-radius: 20px;
+  }
+
+  >div {
+    width: 32%;
+
+    h2 {
+      text-indent: 1em;
+      line-height: 50px;
+      font-size: 24px;
+      color: white;
+    }
+
+    >div {
+      padding: 10px;
+      line-height: 35px;
+
+      >p {
+        font-size: 16px;
+      }
+
+      >a {
+        font-size: 13px;
+      }
+
+      li {
+        text-indent: 15px;
+        font-size: 14px;
+        background: url(../../images/sequare.png) no-repeat left center;
+      }
+
+      .see {
+        text-align: center;
+        margin: 15px 100px;
+        color: white;
+        line-height: 36px;
+        height: 36px;
+        width: 100px;
+        // font-size: 14px;
+        border-radius: 18px;
+        border: none;
+        background-color: #0088CC;
+        transition: all 0.2s;
+        outline: none;
+        box-shadow: 0 4px 0 #0e6fa0;
+        position: relative;
+        top: -4px;
+
+        animation: bttn 1s infinite;
+      }
+    }
+  }
+
+}

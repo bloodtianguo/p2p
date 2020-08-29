@@ -1,0 +1,23 @@
+//函数
+// 页面变黑
+.setBgb(@blw) {
+  filter: grayscale(@blw); // blw写百分号
+}
+
+// 边框阴影
+.setSha(@val1, @val2, @val3, @col) {
+  box-shadow: @val1, @val2, @val3, @col;
+  -webkit-box-shadow: @val1, @val2, @val3, @col;
+  -moz-box-shadow: @val1, @val2, @val3, @col;
+  -ms-box-shadow: @val1, @val2, @val3, @col;
+  -o-box-shadow: @val1, @val2, @val3, @col;
+}
+
+// 圆角
+.setbor(@bon) {
+  border-radius: @bon;
+  -moz-border-radius: @bon;
+  -ms-border-radius: @bon;
+  -webkit-border-radius: @bon;
+  -o-border-radius: @bon;
+}

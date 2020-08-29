@@ -1,0 +1,105 @@
+    <!-- 主体部分开始 -->
+    <link rel="stylesheet" href="./dist/css/borrow_apply.min.css">
+
+    <div class="borrow_apply">
+      <h2 id="Tit1">信用借款</h2>
+      <div class="Apply-sons">
+        <h2>
+          借款类型
+          <button id="Tit2"></button>
+        </h2>
+      </div>
+
+      <div class="Apply-sons2">
+        <!-- 借款金额 -->
+        <div>
+          借款金额
+          <p>
+            <input type="text" id="borrowmoney" oninput="this.value=this.value.replace(/[^\d.]/g,'')">
+            <span>元</span>
+          </p>
+          <i class="borrowmoney"></i>
+        </div>
+        <!-- 借款利息 -->
+        <div>
+          借款利息
+          <p>
+            <input type="text" id="interest" oninput="this.value=this.value.replace(/[^\d.]/g,'')">
+            <span>%</span>
+          </p>
+        </div>
+        <!-- 借款期限 -->
+        <div>
+          借款期限
+          <p>
+            <select name="borrowtime" id="borrowtime">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="9">9</option>
+              <option value="12">12</option>
+              <option value="24">24</option>
+            </select>
+            <span>月</span>
+          </p>
+        </div>
+        <!-- 还款方式 -->
+        <div>
+          还款方式
+          <label>
+            <input type="radio" name="repaytype" value="0" checked>按月分期
+          </label>
+          <label>
+            <input type="radio" name="repaytype" value="1">按月到期
+          </label>
+        </div>
+        <!-- 最小投标 -->
+        <div>
+          最小投标
+          <p>
+            <input type="text" id="minbid" oninput="this.value=this.value.replace(/[^\d.]/g,'')">
+            <span>元</span>
+          </p>
+        </div>
+        <!-- 投标奖金 -->
+        <div>
+          投标奖金
+          <p>
+            <input type="text" id="bouns" oninput="this.value=this.value.replace(/[^\d.]/g,'')">
+            <span>%</span>
+          </p>
+        </div>
+        <!-- 招标天数 -->
+        <div>
+          招标天数
+          <p>
+            <select name="days" id="days">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="9">9</option>
+              <option value="12">12</option>
+              <option value="24">24</option>
+            </select>
+            <span>天</span>
+          </p>
+        </div>
+        <!-- 借款标题 -->
+        <div>
+          借款标题
+          <input type="text" id="title">
+        </div>
+        <!-- 借款描述 -->
+        <div>
+          借款描述
+          <textarea name="info" id="info" style="resize: none;"></textarea>
+        </div>
+
+        <button type="button" id="Btn">提交</button>
+      </div>
+    </div>
+
+    <!-- 主体部分结束 -->
+    <!-- bootstrap框架 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./dist/js/borrow_apply.min.js"></script>

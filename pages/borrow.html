@@ -1,0 +1,42 @@
+<!-- 我要投资 -->
+<link rel="stylesheet" href="../lib/xlPaging/css/xlPaging.css">
+<link rel="stylesheet" href="../dist/css/borrow.min.css">
+<div class="container">
+  <div class="borrow-main">
+    <h2>投资列表</h2>
+    <div class="borrow-sons1">
+      <span>标的状态</span>
+      <div class="Btns">
+        <button type="button" class="activefou">全部</button>
+        <button type="button">招标中</button>
+        <button type="button">还款中</button>
+      </div>
+    </div>
+    <div class="borrow-sons2">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">借款人</th>
+            <th scope="col">借款标题</th>
+            <th scope="col">年利率</th>
+            <th scope="col">金额</th>
+            <th scope="col">还款方式</th>
+            <th scope="col">进度</th>
+            <th scope="col">操作</th>
+          </tr>
+        </thead>
+        <tbody id="borrow-list">
+
+        </tbody>
+      </table>
+      <ul id="page">
+
+      </ul>
+    </div>
+    <div style="height: 100px;"></div>
+  </div>
+</div>
+<script src="../lib/xlPaging/js/jquery.xlPaging.js"></script>
+<script src="./dist/js/home.min.js"></script>
+<script src="../dist/js/borrow.min.js"></script>

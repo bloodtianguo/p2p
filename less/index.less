@@ -1,0 +1,376 @@
+// 引入变量
+@import "./var.less";
+//引入函数
+@import "./fn.less";
+
+// logo以及nav部分
+main {
+
+  .banner {
+    height: 300px;
+
+    div {
+      height: 100%;
+    }
+  }
+
+  .links {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .link1 {
+      padding-left: 100px;
+      background: url(../../images/linkThree1.jpg) no-repeat left center;
+    }
+
+    .link2 {
+      padding-left: 100px;
+      background: url(../../images/linkThree2.png) no-repeat left center;
+    }
+
+    .link3 {
+      padding-left: 100px;
+      background: url(../../images/linkThree3.png) no-repeat left center;
+    }
+
+
+    a {
+      color: @backb;
+      line-height: 30px;
+
+      strong {
+        font-size: @f22;
+      }
+
+      p {
+        color: @col9;
+        font-size: @f14;
+        line-height: 22px;
+      }
+
+
+      &:hover {
+        text-decoration: none;
+        color: @cols;
+      }
+
+    }
+  }
+
+  .main-sons {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+    }
+
+    .main-left {
+      flex: 3;
+      font-weight: bold;
+      padding-right: 15px;
+
+      .Title {
+        font-size: @f18;
+        line-height: 70px;
+        padding-left: 10px;
+
+        span {
+          margin-left: 20px;
+          font-size: @f12;
+          color: @col9;
+        }
+      }
+
+      a {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      // 债权精选
+      .table {
+        font-size: 14px;
+        line-height: 44px;
+
+        .sons1 {
+          display: inline-block;
+          width: 44px;
+          color: @colb;
+          border: 1px solid @cols;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 44px;
+
+          &:hover {
+            color: @colw;
+            background-color: @colb;
+          }
+        }
+      }
+
+
+      // 更多债权
+      .More {
+        color: @col9;
+        width: 100%;
+        line-height: 40px;
+        font-size: @f14;
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        border: 1px solid @col9;
+        .setbor(20px);
+
+        &:hover {
+          color: @colb;
+        }
+      }
+    }
+
+    .main-right {
+      padding-top: 15px;
+      flex: 1;
+
+      .lo {
+        margin-bottom: 10px;
+
+        .btn1 {
+          width: 35%;
+        }
+
+        .btn2 {
+          width: 60%;
+        }
+
+        a:hover {
+          color: white;
+        }
+      }
+
+      .main-side {
+        width: 100%;
+        height: 170px;
+        border: 1px solid @col3c;
+        margin: 12px 0;
+
+        ul {
+          padding: 10px;
+
+          span {
+            display: inline-block;
+            text-align: center;
+            width: 15px;
+            line-height: 10px;
+            font-size: 12px;
+            border: 1px solid @col3c;
+            margin-right: 10px;
+          }
+
+          li {
+            max-width: 310px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+
+          li:not(:first-child) {
+            font-size: @f14;
+            line-height: 30px;
+            padding-left: 20px;
+
+            a {
+              color: #898989;
+
+              &:hover {
+                color: @colb;
+              }
+            }
+          }
+
+          li:first-child {
+            padding: 0 0px 7px 7px;
+
+            a {
+              color: @backb;
+              font-size: 16px;
+            }
+          }
+        }
+
+
+      }
+
+      // 网站公告部分
+      .right-sons2 {
+        height: 188px;
+
+        .Notice {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            line-height: 25px;
+            text-align: center;
+            font-size: 16px;
+          }
+
+          .Notice1,
+          .Notice2 {
+            flex: 5;
+
+            >span {
+              display: inline-block;
+              width: 100%;
+            }
+          }
+
+        }
+
+        // 内容部分1
+        .Notice1-main {
+          padding: 10px;
+
+          >li {
+            width: 100%;
+            padding-left: 25px;
+            height: 29px;
+            line-height: 29px;
+            text-align: left;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+          }
+
+          .sons1 {
+            color: @colb;
+            background: transparent url(../images/index_ico.gif) no-repeat 0 -385px;
+          }
+
+          .sons2,
+          .sons3,
+          .sons4 {
+            background: transparent url(../images/index_ico.gif) no-repeat 0 -409px;
+          }
+        }
+
+        // 内容部分2
+        .Notice2-main {
+          padding: 10px;
+          display: none;
+
+          li {
+            width: 100%;
+            padding-left: 10px;
+            height: 29px;
+            line-height: 29px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 50px;
+              margin-right: 15px;
+            }
+
+            a {
+              color: #898989;
+              font-size: 12px;
+
+              &:hover {
+                color: @colb;
+              }
+            }
+          }
+
+        }
+      }
+
+      //新人引导部分
+      .QA {
+        padding: 10px;
+
+        span {
+          display: inline-block;
+          text-align: center;
+          width: 15px;
+          line-height: 10px;
+          font-size: 12px;
+          border: 1px solid @col3c;
+          margin-right: 10px;
+        }
+
+        li {
+          max-width: 310px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        li:not(:first-child) {
+          font-size: @f14;
+          line-height: 30px;
+          padding-left: 20px;
+
+          a {
+            color: #898989;
+
+            &:hover {
+              color: @colb;
+            }
+          }
+        }
+
+        li:first-child {
+          padding: 0 0px 7px 7px;
+
+          a {
+            color: @backb;
+            font-size: 16px;
+          }
+        }
+
+      }
+
+
+    }
+  }
+}
+
+// 页面小工具部分
+.aside {
+  width: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 100;
+
+  background: rgba(225, 225, 225, .5);
+
+  .close {
+    background: url(../../images/close.png) no-repeat -18.5px 0;
+    width: 40px;
+    height: 16px;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .goTop {
+    display: block;
+    background: url(../../images//aside_icons.png?v=1) no-repeat transparent;
+    background-position: 0 -160px;
+    width: 40px;
+    padding-left: 40px;
+    height: 33px;
+    margin-bottom: 2px;
+    padding-top: 7px;
+    position: absolute;
+    top: 90%;
+  }
+
+}

@@ -1,0 +1,84 @@
+// 引入变量
+@import "./var.less";
+//引入函数
+@import "./fn.less";
+
+header {
+  background-color: @backb;
+  color: @colw;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      color: @colb;
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        color: @colb;
+      }
+    }
+
+
+  }
+
+
+  .header-Nav {
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 320px;
+      font-size: @f14;
+    }
+  }
+}
+
+// nav以及logo部分
+nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+  .logo {
+    width: 100px;
+    height: 40px;
+    background: url(../../images/logo.png) no-repeat;
+    margin-right: 15px;
+  }
+
+  ul {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: @f14;
+
+    li {
+      text-align: center;
+
+      a {
+        display: inline-block;
+        color: #959EB0;
+        width: 100px;
+        line-height: 70px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          font-size: 16px;
+          color: @colw;
+          .setbor(5px);
+          background-color: @cols;
+        }
+      }
+    }
+  }
+}
